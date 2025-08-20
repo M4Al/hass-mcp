@@ -25,9 +25,7 @@ from app.hass import (
 T = TypeVar('T')
 
 # Create an MCP server
-from mcp.server.fastmcp import FastMCP, Context, Image
-from mcp.server.stdio import stdio_server
-import mcp.types as types
+from fastmcp import FastMCP
 mcp = FastMCP("Hass-MCP")
 
 def async_handler(command_type: str):

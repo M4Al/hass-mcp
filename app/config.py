@@ -1,5 +1,8 @@
 import os
 from typing import Optional
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Home Assistant configuration
 HA_URL: str = os.environ.get("HA_URL", "http://localhost:8123")
